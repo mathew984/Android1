@@ -1,0 +1,476 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gmail.mathew984.pogoda.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp" >
+        
+     <TextView
+            android:id="@+id/DateDay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay1"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tempDay1"
+            android:text="12/12/12" />
+
+        <TextView
+            android:id="@+id/tempDay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="12C"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/humDay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/humLabDay1"
+            android:layout_alignBottom="@+id/humLabDay1"
+            android:layout_toLeftOf="@+id/pressLabDay1"
+            android:layout_marginRight="10dp"
+            android:text="100%"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/condIconDay1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/a01d" />
+
+        <TextView
+            android:id="@+id/condDescrDay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/condIconDay1"
+            android:layout_centerHorizontal="true"
+            android:text="Umiarkowany Deszcz"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/humLabDay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay1"
+            android:layout_marginLeft="25dp"
+            android:layout_toLeftOf="@+id/humDay1"
+            android:text="Wilgotność: " 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/pressDay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay1"
+            android:layout_toLeftOf="@+id/condIconDay1"
+            android:layout_marginRight="25dp"
+            android:text="1000hPa" />
+
+        <TextView
+            android:id="@+id/pressLabDay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pressDay1"
+            android:layout_alignBottom="@+id/pressDay1"
+            android:layout_toLeftOf="@+id/pressDay1"
+            android:text="Ciśnienie: " />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true">
+        
+     <TextView
+            android:id="@+id/DateDay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay2"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tempDay2"
+            android:text="12/12/12" />
+
+        <TextView
+            android:id="@+id/tempDay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="12C"
+            android:textSize="35sp" />
+        
+        <TextView
+            android:id="@+id/humDay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/humLabDay2"
+            android:layout_alignBottom="@+id/humLabDay2"
+            android:layout_toLeftOf="@+id/pressLabDay2"
+            android:layout_marginRight="10dp"
+            android:text="100%" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/condIconDay2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/a01d" />
+
+        <TextView
+            android:id="@+id/condDescrDay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/condIconDay2"
+            android:layout_centerHorizontal="true"
+            android:text="Umiarkowany Deszcz"
+            android:textSize="25sp" />
+
+<TextView
+            android:id="@+id/humLabDay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay2"
+            android:layout_marginLeft="25dp"
+            android:layout_toLeftOf="@+id/humDay2"
+            android:text="Wilgotność: "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/pressDay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay2"
+            android:layout_toLeftOf="@+id/condIconDay2"
+            android:layout_marginRight="25dp"
+            android:text="1000hPa" />
+
+        <TextView
+            android:id="@+id/pressLabDay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pressDay2"
+            android:layout_alignBottom="@+id/pressDay2"
+            android:layout_toLeftOf="@+id/pressDay2"
+            android:text="Ciśnienie: " />
+        
+         <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" /> 
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true">
+        
+     <TextView
+            android:id="@+id/DateDay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay3"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tempDay3"
+            android:text="12/12/12" />
+
+        <TextView
+            android:id="@+id/tempDay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="12C"
+            android:textSize="35sp" />
+        
+        <TextView
+            android:id="@+id/humDay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/humLabDay3"
+            android:layout_alignBottom="@+id/humLabDay3"
+            android:layout_toLeftOf="@+id/pressLabDay3"
+            android:layout_marginRight="10dp"
+            android:text="100%" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/condIconDay3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/a01d" />
+
+        <TextView
+            android:id="@+id/condDescrDay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/condIconDay3"
+            android:layout_centerHorizontal="true"
+            android:text="Umiarkowany Deszcz"
+            android:textSize="25sp" />
+
+		<TextView
+            android:id="@+id/humLabDay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay3"
+            android:layout_marginLeft="25dp"
+            android:layout_toLeftOf="@+id/humDay3"
+            android:text="Wilgotność: "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/pressDay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay3"
+            android:layout_toLeftOf="@+id/condIconDay3"
+            android:layout_marginRight="25dp"
+            android:text="1000hPa" />
+
+        <TextView
+            android:id="@+id/pressLabDay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pressDay3"
+            android:layout_alignBottom="@+id/pressDay3"
+            android:layout_toLeftOf="@+id/pressDay3"
+            android:text="Ciśnienie: " />
+        
+         <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+             /> 
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true">
+        
+     <TextView
+            android:id="@+id/DateDay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay4"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tempDay4"
+            android:text="12/12/12" />
+
+        <TextView
+            android:id="@+id/tempDay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="12C"
+            android:textSize="35sp" />
+        
+        <TextView
+            android:id="@+id/humDay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/humLabDay4"
+            android:layout_alignBottom="@+id/humLabDay4"
+            android:layout_toLeftOf="@+id/pressLabDay4"
+            android:layout_marginRight="10dp"
+            android:text="100%" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/condIconDay4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/a01d" />
+
+        <TextView
+            android:id="@+id/condDescrDay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/condIconDay4"
+            android:layout_centerHorizontal="true"
+            android:text="Umiarkowany Deszcz"
+            android:textSize="25sp" />
+
+		<TextView
+            android:id="@+id/humLabDay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay4"
+            android:layout_marginLeft="25dp"
+            android:layout_toLeftOf="@+id/humDay4"
+            android:text="Wilgotność: " 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/pressDay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay4"
+            android:layout_toLeftOf="@+id/condIconDay4"
+            android:layout_marginRight="25dp"
+            android:text="1000hPa" />
+
+        <TextView
+            android:id="@+id/pressLabDay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pressDay4"
+            android:layout_alignBottom="@+id/pressDay4"
+            android:layout_toLeftOf="@+id/pressDay4"
+            android:text="Ciśnienie: " />
+        
+         <ProgressBar
+            android:id="@+id/progressBar4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" /> 
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true">
+        
+     <TextView
+            android:id="@+id/DateDay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay5"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tempDay5"
+            android:text="12/12/12" />
+
+        <TextView
+            android:id="@+id/tempDay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="12C"
+            android:textSize="35sp" />
+        
+        <TextView
+            android:id="@+id/humDay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/humLabDay5"
+            android:layout_alignBottom="@+id/humLabDay5"
+            android:layout_toLeftOf="@+id/pressLabDay5"
+            android:layout_marginRight="10dp"
+            android:text="100%"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/condIconDay5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/a01d" />
+
+        <TextView
+            android:id="@+id/condDescrDay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/condIconDay5"
+            android:layout_centerHorizontal="true"
+            android:text="Umiarkowany Deszcz"
+            android:textSize="25sp" /> 
+
+		<TextView
+            android:id="@+id/humLabDay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay5"
+            android:layout_marginLeft="25dp"
+            android:layout_toLeftOf="@+id/humDay5"
+            android:text="Wilgotność: " 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/pressDay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/condIconDay5"
+            android:layout_toLeftOf="@+id/condIconDay5"
+            android:layout_marginRight="25dp"
+            android:text="1000hPa" />
+
+        <TextView
+            android:id="@+id/pressLabDay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pressDay5"
+            android:layout_alignBottom="@+id/pressDay5"
+            android:layout_toLeftOf="@+id/pressDay5"
+            android:text="Ciśnienie: " />
+        
+         <ProgressBar
+            android:id="@+id/progressBar5"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" /> 
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/relativeLayout5" >
+         
+        <com.jjoe64.graphview.GraphView
+        	android:layout_width="match_parent"
+        	android:layout_height="300dip"
+        	android:layout_marginTop="60dp"
+        	android:id="@+id/graph" />
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>
